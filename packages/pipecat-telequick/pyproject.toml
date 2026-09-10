@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipecat-telequick"
+version = "0.1.0"
+description = "TeleQuick transport for Pipecat: run an unmodified Pipecat pipeline on real phone calls over the TeleQuick QUIC media plane."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pipecat-ai>=1.5,<2",
+    "telequick-agents[quic]>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["pipecat_telequick*"]

@@ -1,0 +1,2 @@
+--extra-index-url https://artifacts.clutchcall.dev/pip/simple/
+telequick-agents[quic]>=0.1.0

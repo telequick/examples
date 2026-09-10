@@ -1,0 +1,4 @@
+--extra-index-url https://artifacts.clutchcall.dev/pip/simple/
+telequick-agents>=0.1.0
+flask
+python-dotenv

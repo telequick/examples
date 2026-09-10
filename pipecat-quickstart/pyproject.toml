@@ -1,0 +1,20 @@
+[project]
+name = "pipecat-quickstart-telequick"
+version = "0.1.0"
+description = "Pipecat quickstart bot answering real phone calls over TeleQuick"
+requires-python = ">=3.10"
+dependencies = [
+    "pipecat-ai[silero,deepgram,openai,cartesia]>=1.5,<2",
+    "pipecat-telequick",
+    "python-dotenv",
+]
+
+[tool.uv.sources]
+# Served from the TeleQuick package origin; see the repo README.
+pipecat-telequick = { index = "telequick" }
+telequick-agents = { index = "telequick" }
+
+[[tool.uv.index]]
+name = "telequick"
+url = "https://artifacts.clutchcall.dev/pip/simple/"
+explicit = true
